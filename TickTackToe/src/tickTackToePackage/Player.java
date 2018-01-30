@@ -12,4 +12,8 @@ public class Player {
 	public String getName() {
 		return myName;
 	}
+	
+	public int getID() {
+		return ID;
+	}
 }
