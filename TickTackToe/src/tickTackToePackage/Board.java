@@ -63,6 +63,7 @@ public class Board {
 				}
 			}
 		}
+		System.out.println();
 		System.out.println("---------------");
 		for(int row = 1; row<2; row++) {
 			for(int col = 0; col < gameBoard[row].length;col++) {
@@ -75,6 +76,7 @@ public class Board {
 				}
 			}
 		}
+		System.out.println();
 		System.out.println("---------------");
 		for(int row = 2; row<3; row++) {
 			for(int col = 0; col < gameBoard[row].length;col++) {
