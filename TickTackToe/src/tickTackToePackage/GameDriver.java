@@ -4,8 +4,8 @@ public class GameDriver {
 
 	public static void main(String[] args) {
 		
-		Player player1 = new Player("", 1);
-		Player player2 = new Player("", 2);
+		Player player1 = new Player("Bob", 1);
+		Player player2 = new Player("Jack", 2);
 		Board board = new Board();
 				while(board.checkCondition())
 				{
