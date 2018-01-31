@@ -1,10 +1,31 @@
 package tickTackToePackage;
-
+//Shivam and Andrew
 public class GameDriver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Player player1 = new Player("", 1);
+		Player player2 = new Player("", 2);
+		Board board = new Board();
+				while(board.checkCondition())
+				{
+					if(board.checkAvailability())
+					{
+						player1.setMarker();
+						player1.checkwinner();
+					}
+					if(!board.checkAvailability())
+					{
+						player2.setMarker();
+						player2.checkwinner();
+					}
+					
+				}
 
-	}
+			}
+
+		}
+
+}
 
 }
