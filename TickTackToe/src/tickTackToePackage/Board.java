@@ -19,6 +19,7 @@ public class Board {
 	
 	
 	//Checks if there is a winning condition on the board (3 in a row)
+	//Returns true if there is a winner
 	//Andrew
 	public boolean checkCondition() {
 		//Check each row
@@ -44,6 +45,7 @@ public class Board {
 	}
 	
 	//Checks if there are empty spaces on the board left
+	//Returns true if there are spaces left
 	//Saket
 	public boolean checkAvailability() {
 		return false;
