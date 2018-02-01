@@ -28,6 +28,7 @@ public class GameDriver {
 		System.out.println("Input coordinates in the format 'x, y'");
 		Board board = new Board();
 		boolean cont = false;
+		int moveCounter = 0;
 				while(board.checkCondition())
 				{
 					if(board.checkAvailability())
@@ -46,11 +47,34 @@ public class GameDriver {
 								System.out.println("Please choose a different one.");
 							}
 						}
+						moveCounter++;
 					}
-					if(!board.checkAvailability())
+					if(board.checkAvailability())
 					{
-						//player2.setMarker();
-						//player2.checkwinner();
+						System.out.println(player2.getName() + ", please input a coordinate.");
+						String input2 = input.nextLine();
+						int num1 = Integer.parseInt(input2.substring(0, 1));
+						int num2 = Integer.parseInt(input2.substring(2, 3));
+						cont = false;
+						while(!cont) {
+							if(board.getSpace(num1,  num2) == 0) {
+								board.setSpace(player2.getID(), num1, num2);
+								cont = true;
+							} else {
+								System.out.println("That space is already filled.");
+								System.out.println("Please choose a different one.");
+							}
+						}
+						moveCounter++;
+					}
+					if(!board.checkAvailability()) {
+						if(moveCounter%2 == 0 && board.checkCondition()) {
+							System.out.println("Congradulations, " + player2.getName() + ", you Won!");
+						} else if(board.checkCondition()) {
+							System.out.println("Congradulations, " + player1.getName() + ", you Won!");
+						} else {
+							System.out.println("It was a tie!");
+						}
 					}
 					
 				}
