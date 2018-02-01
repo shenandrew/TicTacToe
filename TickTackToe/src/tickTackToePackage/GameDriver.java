@@ -30,6 +30,7 @@ public class GameDriver {
 
 		boolean cont = false;
 		int moveCounter = 0;
+		board.getBoard();
 		while (board.checkCondition()) {
 			if (board.checkAvailability()) {
 				System.out.println(player1.getName() + ", please input a coordinate.");
@@ -46,6 +47,7 @@ public class GameDriver {
 						System.out.println("Please choose a different one.");
 					}
 				}
+				board.getBoard();
 				moveCounter++;
 			}
 			if (board.checkAvailability()) {
@@ -63,6 +65,7 @@ public class GameDriver {
 						System.out.println("Please choose a different one.");
 					}
 				}
+				board.getBoard();
 				moveCounter++;
 			}
 			if (!board.checkAvailability()) {
