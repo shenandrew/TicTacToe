@@ -54,7 +54,43 @@ public class Board {
 	//Prints out the board in X's and O's
 	//Maggie
 	public void getBoard() {
-		
+		for(int row = 0; row<1; row++) {
+			for(int col = 0; col < gameBoard[row].length;col++) {
+				if(gameBoard[row][col]==1) {
+					System.out.print("| X |");
+				}else if(gameBoard[row][col]==2) {
+					System.out.print("| O |");
+				}else {
+					System.out.print("|   |");
+				}
+			}
+		}
+		System.out.println();
+		System.out.println("---------------");
+		for(int row = 1; row<2; row++) {
+			for(int col = 0; col < gameBoard[row].length;col++) {
+				if(gameBoard[row][col]==1) {
+					System.out.print("| X |");
+				}else if(gameBoard[row][col]==2) {
+					System.out.print("| O |");
+				}else {
+					System.out.print("|   |");
+				}
+			}
+		}
+		System.out.println();
+		System.out.println("---------------");
+		for(int row = 2; row<3; row++) {
+			for(int col = 0; col < gameBoard[row].length;col++) {
+				if(gameBoard[row][col]==1) {
+					System.out.print("| X |");
+				}else if(gameBoard[row][col]==2) {
+					System.out.print("| O |");
+				}else {
+					System.out.print("|   |");
+				}
+			}
+		}
 	}
 	
 }
