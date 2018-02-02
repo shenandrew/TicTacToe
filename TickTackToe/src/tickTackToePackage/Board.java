@@ -14,7 +14,8 @@ public class Board {
 	//Returns the value of the specific space
 	//Srujan
 	public int getSpace(int row, int col) {
-		return 0;
+		
+		return gameBoard[row][col];
 	}
 	
 	
