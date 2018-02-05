@@ -8,6 +8,7 @@ public class Player {
 		myName = name;
 		this.ID = ID;
 	}
+	//Srujan, make the getID and getName methods
 	
 	
 }
