@@ -9,11 +9,5 @@ public class Player {
 		this.ID = ID;
 	}
 	
-	public String getName() {
-		return myName;
-	}
 	
-	public int getID() {
-		return ID;
-	}
 }
