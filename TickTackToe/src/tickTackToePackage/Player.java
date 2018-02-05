@@ -9,6 +9,13 @@ public class Player {
 		this.ID = ID;
 	}
 	//Srujan, make the getID and getName methods
-	
+	public String getName()
+	{
+		return myName;
+	}
+	public int getID()
+	{
+		return ID;
+	}
 	
 }
