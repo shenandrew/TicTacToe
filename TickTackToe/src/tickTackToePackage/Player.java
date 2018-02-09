@@ -8,12 +8,14 @@ public class Player {
 		myName = name;
 		this.ID = ID;
 	}
-	
-	public String getName() {
+	//Srujan, make the getID and getName methods
+	public String getName()
+	{
 		return myName;
 	}
-	
-	public int getID() {
+	public int getID()
+	{
 		return ID;
 	}
+	
 }
