@@ -14,8 +14,7 @@ public class Board {
 	//Returns the value of the specific space
 	//Srujan
 	public int getSpace(int row, int col) {
-		
-		return gameBoard[row][col];
+		return 0;
 	}
 	
 	
@@ -49,8 +48,16 @@ public class Board {
 	//Returns true if there are spaces left
 	//Saket
 	public boolean checkAvailability() {
+			for (int i=0; i <=3; i++) {
+				for(int j =0; j <=3; j++) {
+				if((gameBoard[i][j] !=  1) || (gameBoard [i][j] != 2)) {
+					return true;
+				}
+				}
+			}
+		
 		return false;
-	}
+		}
 	
 	//Prints out the board in X's and O's
 	//Maggie
